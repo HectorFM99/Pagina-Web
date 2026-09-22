@@ -18,3 +18,16 @@ title{
     font-size: 12px;
 }
 
+nav {
+  background-color: #222;
+  padding: 15px;
+}
+
+.boton-proyectos {
+  display: inline-block;
+  background-color: #e63946;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+}
