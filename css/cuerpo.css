@@ -116,3 +116,74 @@ hr {
 .enlace-proyecto:hover {
   background: #c92f3b;
 }
+
+/* Barra de arriba */
+.barra-superior {
+  background-color: #222;
+  padding: 12px;
+}
+
+/* Botón ☰ */
+.boton-menu {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Panel lateral: inicialmente fuera de la pantalla */
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 220px;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s;
+}
+
+/* Clase que mostrará el menú */
+.menu-lateral.abierto {
+  left: 0;
+}
+
+/* Quitar formato de lista */
+.menu-lateral > ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Enlaces del panel */
+.menu-lateral a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+}
+
+/* Efecto al pasar el ratón */
+.menu-lateral a:hover {
+  background-color: #555;
+}
+
+/* Submenús inicialmente cerrados */
+.menu-lateral li > ul {
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin: 0;
+  padding: 0 0 0 15px;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+
+/* Submenú abierto al pasar el ratón */
+.menu-lateral li:hover > ul {
+  max-height: 200px;
+  opacity: 1;
+  padding: 8px 0 8px 15px;
+}
