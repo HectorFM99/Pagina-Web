@@ -1,0 +1,118 @@
+title{
+    color: #000000; 
+    font-size: 24px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px 40px;
+  background-color: #222;
+}
+
+.boton-proyectos {
+  display: inline-block;
+  background-color: #e63946;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+nav a:hover {
+  background-color: #444;
+}
+h1,
+p {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.texto {
+  color: #555;
+  line-height: 1.6;
+}
+
+.centrado{
+  text-align: center;
+}
+
+hr {
+  width: 90%;
+  margin: 20px auto;
+  border: 0;
+  border-top: 10px solid #000000;
+}
+
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 25px;
+}
+
+.tarjeta {
+  overflow: hidden;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+}
+
+.imagen-proyecto {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Cambia estas rutas por las de tus imágenes */
+.imagen-1 {
+  background-image: url("imagenes/proyecto1.jpg");
+}
+
+.imagen-2 {
+  background-image: url("imagenes/proyecto2.jpg");
+}
+
+.imagen-3 {
+  background-image: url("imagenes/proyecto3.jpg");
+}
+
+.contenido-tarjeta {
+  padding: 18px;
+}
+
+.contenido-tarjeta h2 {
+  margin: 0 0 10px;
+}
+
+.contenido-tarjeta p {
+  margin: 0 0 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.enlace-proyecto {
+  display: inline-block;
+  padding: 9px 14px;
+  background: #e63946;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.enlace-proyecto:hover {
+  background: #c92f3b;
+}
