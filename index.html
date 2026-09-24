@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-    <link rel="stylesheet" href="css/cuerpo.css">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Personal</title>
+
+    <link rel="stylesheet" href="css/cuerpo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav class="barra-superior">
+<nav class="imagen-barra-superior">
   <button class="boton-menu" type="button" aria-label="Abrir menú">
     ☰
   </button>
@@ -15,32 +21,34 @@
 
 <aside class="menu-lateral">
   <ul>
-    <li><a href="index.html">Inicio</a></li>
+    <li><a class="boton-menu" href="index.html">Inicio</a></li>
 
     <li>
-      <a href="pages/sobre_mi.html">Sobre mí</a>
+      <a class="boton-menu" href="pages/sobre_mi.html">Sobre mí</a>
       <ul>
-        <li><a href="aficiones.html">Aficiones</a></li>
-        <li><a href="estudios.html">Estudios</a></li>
+        <li><a class="boton-menu" href="pages/certificados.html">Certificados</a></li>
+        <li><a class="boton-menu" href="pages/estudios.html">Estudios Academicos</a></li>
       </ul>
     </li>
 
     <li>
-      <a href="#">Proyectos</a>
+      <a class="boton-menu" href="#">Proyectos</a>
       <ul>
-        <li><a href="pages/proyectos.html">Todos los proyectos</a></li>
-        <li><a href="proyecto-destacado.html">Proyecto destacado</a></li>
+        <li><a class="boton-menu" href="pages/proyectos.html">Todos los proyectos</a></li>
       </ul>
     </li>
 
-    <li><a href="pages/contactos.html">Contacto</a></li>
+    <li><a class="boton-menu" href="pages/contactos.html">Contacto</a></li>
   </ul>
 </aside>
+<div class="fondo-difuminado"></div>
+<main class="contenido">
 <h1 class="centrado">Bienvenidos a mi pagina personal</h1>
 <hr>
 <p class="centrado">Hola, mi nombre es Hector Franco Magallo y esta es mi pagina personal.</p>
 <div>   
-<p class="texto centrado">En esta pagina podras encontrar informacion sobre mi, mis intereses y mis proyectos.</p>
+<p class="centrado">En esta pagina podras encontrar informacion sobre mi, mis intereses y mis proyectos.</p>
+</main>
 </div>
 <script src="js/programacion.js"></script>
 </body>

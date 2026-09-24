@@ -21,11 +21,17 @@ nav {
 }
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f4f4f4;
   color: #222;
+  background-image: url("../assets/images/Fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 nav a {
+  font-family: "Roboto", sans-serif;
   color: white;
   text-decoration: none;
   padding: 8px 12px;
@@ -34,8 +40,9 @@ nav a {
 nav a:hover {
   background-color: #444;
 }
-h1,
+
 p {
+  font-family: "Roboto", sans-serif;
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -78,8 +85,17 @@ hr {
 }
 
 /* Cambia estas rutas por las de tus imágenes */
+.imagen-barra-superior {
+  background-image: url("../assets/images/Banners\ superior.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
 .imagen-1 {
-  background-image: url("imagenes/proyecto1.jpg");
+  background-image: url("../assets/images/Icono1.png");
 }
 
 .imagen-2 {
@@ -186,4 +202,40 @@ hr {
   max-height: 200px;
   opacity: 1;
   padding: 8px 0 8px 15px;
+}
+
+/* Capa que cubre la página */
+.fondo-difuminado {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+}
+
+/* Se muestra cuando el menú está abierto */
+.menu-lateral.abierto ~ .fondo-difuminado {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* El menú queda por encima de la capa */
+.menu-lateral {
+  z-index: 20;
+}
+
+.contenido {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.boton-menu {
+  font-family: "Roboto", sans-serif;
 }
