@@ -21,6 +21,9 @@ nav {
 }
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: "Poppins", sans-serif;
   background-color: #f4f4f4;
   color: #222;
@@ -228,14 +231,79 @@ hr {
 }
 
 .contenido {
-  max-width: 900px;
-  margin: 40px auto;
+ max-width: 900px;
+  margin: 40px auto 100px;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 12px;
   box-sizing: border-box;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .boton-menu {
   font-family: "Roboto", sans-serif;
+}
+
+.pie-pagina {
+ margin-top: auto;
+  padding: 18px 20px;
+  background-color: rgba(20, 20, 20, 0.92);
+  color: white;
+  text-align: center;
+}
+
+.pie-pagina nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding: 0;
+  background-color: transparent;
+}
+
+.pie-pagina a {
+  margin: 0;
+  color: #d9d9d9;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.pie-pagina a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.pie-pagina p {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.fondo-difuminado {
+  opacity: 0;
+  visibility: hidden;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido-proyectos {
+  margin-bottom: 40px;
+}
+
+.marca {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
