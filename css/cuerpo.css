@@ -21,16 +21,7 @@ min-height: 100vh;
   color: var(--color-texto);
   background: #f4f4f4 url("../assets/images/Fondo.jpg") center / cover no-repeat fixed;
 }
-nav a {
-  font-family: "Roboto", sans-serif;
-  color: white;
-  text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-}
-nav a:hover {
-  background-color: #444;
-}
+
 
 p {
   font-family: "Roboto", sans-serif;
@@ -133,11 +124,11 @@ hr {
   padding: 12px;
 }
 
-/* Botón ☰ */
-.boton-menu {
-  background-color: #444;
+.boton-hamburguesa {
+  font-family: "Roboto", sans-serif;
+  background: #444;
   color: white;
-  border: none;
+  border: 0;
   padding: 10px 15px;
   font-size: 22px;
   cursor: pointer;
@@ -146,6 +137,7 @@ hr {
 
 /* Panel lateral: inicialmente fuera de la pantalla */
 .menu-lateral {
+  z-index: 20;
   position: fixed;
   top: 0;
   left: -250px;
@@ -202,23 +194,18 @@ hr {
 .fondo-difuminado {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  background: rgb(0 0 0 / 25%);
   backdrop-filter: blur(3px);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  z-index: 10;
 }
 
 /* Se muestra cuando el menú está abierto */
 .menu-lateral.abierto ~ .fondo-difuminado {
   opacity: 1;
   visibility: visible;
-}
-
-/* El menú queda por encima de la capa */
-.menu-lateral {
-  z-index: 20;
 }
 
 .contenido {
@@ -266,11 +253,6 @@ hr {
   margin: 14px 0 0;
   font-size: 13px;
   color: #aaa;
-}
-
-.fondo-difuminado {
-  opacity: 0;
-  visibility: hidden;
 }
 
 .contenido-proyectos {
