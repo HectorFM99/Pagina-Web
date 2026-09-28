@@ -28,3 +28,22 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((element) => {
   observer.observe(element);
 });
+
+const elemento = document.getElementById("texto-escrito");
+
+if (elemento) {
+  const texto = elemento.textContent.trim();
+  elemento.textContent = "";
+
+  let posicion = 0;
+
+  function escribir() {
+    if (posicion < texto.length) {
+      elemento.textContent += texto.charAt(posicion);
+      posicion++;
+      setTimeout(escribir, 40); // Más milisegundos = más lento
+    }
+  }
+
+  escribir();
+}

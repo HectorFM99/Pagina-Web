@@ -1,3 +1,7 @@
+ul{
+  color: white;
+}
+
 .titulo{
   font-family: "Dancing Script", cursive;
   font-size: 100px;
@@ -316,14 +320,7 @@ hr {
   object-fit: contain;
 }
 
-:root {
-  --color-oscuro: #222;
-  --color-texto: #222;
-  --color-acento: #e63946;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+#texto-escrito {
+  max-width: 90%;
+  margin-inline: auto;
 }
