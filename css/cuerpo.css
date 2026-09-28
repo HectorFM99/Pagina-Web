@@ -1,3 +1,9 @@
+.titulo{
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  color: white;
+}
+
 .boton-proyectos {
   display: inline-block;
   background-color: #e63946;
@@ -22,11 +28,11 @@ min-height: 100vh;
   background: #f4f4f4 url("../assets/images/Fondo.jpg") center / cover no-repeat fixed;
 }
 
-
 p {
   font-family: "Roboto", sans-serif;
   margin-left: 25px;
   margin-right: 25px;
+  color: white;
 }
 .texto {
   color: #555;
@@ -84,11 +90,11 @@ hr {
 }
 
 .imagen-2 {
-  background-image: url("imagenes/proyecto2.jpg");
+  background-image: url("../assets/images/comingsoon.jfif");
 }
 
 .imagen-3 {
-  background-image: url("imagenes/proyecto3.jpg");
+  background-image: url("../assets/images/comingsoon.jfif");
 }
 
 .contenido-tarjeta {
@@ -209,13 +215,15 @@ hr {
 }
 
 .contenido {
- max-width: 900px;
+  max-width: 900px;
   margin: 40px auto 100px;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 12px;
+  background-color: transparent;
+  border-radius: 0px;
   box-sizing: border-box;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
+  position: relative;
+  top: -50px;
 }
 
 .boton-menu {
@@ -271,9 +279,9 @@ hr {
   filter: blur(12px);
   transform: translateX(-28px);
   transition:
-    opacity 700ms ease,
-    filter 700ms ease,
-    transform 700ms ease;
+    opacity 1800ms ease,
+    filter 1800ms ease,
+    transform 1800ms ease;
 }
 
 .reveal.is-visible {
