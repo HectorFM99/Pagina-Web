@@ -60,7 +60,8 @@ hr {
   gap: 24px;
   max-width: 1100px;
   margin: 40px auto;
-  padding: 0 25px;
+  padding: 0 -25px;
+  margin-top: -100px;
 }
 
 .tarjeta {
@@ -227,7 +228,7 @@ hr {
   box-sizing: border-box;
   box-shadow: none;
   position: relative;
-  top: -50px;
+  top: -100px;
 }
 
 .boton-menu {
@@ -268,7 +269,7 @@ hr {
 }
 
 .contenido-proyectos {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 .marca {
@@ -359,12 +360,22 @@ hr {
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
+.contacto-social img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
 .contacto-social:nth-child(2) {
   animation-delay: 140ms;
 }
 
 .contacto-social:nth-child(3) {
   animation-delay: 280ms;
+}
+
+.contacto-social:nth-child(4) {
+  animation-delay: 420ms;
 }
 
 .contacto-social svg {
@@ -382,18 +393,6 @@ hr {
 .contacto-social:focus-visible {
   outline: 3px solid white;
   outline-offset: 4px;
-}
-
-.linkedin svg {
-  color: #0a66c2;
-}
-
-.github svg {
-  color: white;
-}
-
-.gmail svg {
-  color: #ea4335;
 }
 
 .contacto-telefono {
@@ -425,4 +424,51 @@ hr {
     animation: none;
     transition: none;
   }
+}
+
+/* Tarjetas de estudios*/
+
+.contenido-estudios {
+  top: 0;
+  margin: 30px auto 50px;
+}
+
+.fecha-estudio {
+  margin: 0 0 10px;
+  color: #d9d9d9;
+  font-size: 14px;
+}
+
+.tarjeta-estudio h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: white;
+}
+
+.tarjeta-estudio .descripcion-estudio {
+  margin: 0;
+  color: #eee;
+  line-height: 1.6;
+  padding: 22px 26px;
+  border: 1px solid rgb(255 255 255 / 25%);
+  border-radius: 14px;
+  background: rgb(20 20 20 / 75%);
+  color: white;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 25%);
+}
+
+.lista-estudios {
+  display: grid;
+  gap: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.sigla-estudio {
+  display: block;
+  margin-bottom: 8px;
+  color: #d9d9d9;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
