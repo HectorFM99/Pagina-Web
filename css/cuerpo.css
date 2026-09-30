@@ -472,3 +472,53 @@ hr {
   font-weight: 700;
   letter-spacing: 2px;
 }
+
+/* Estilos para los certificados */
+
+.contenido-certificados {
+  top: 0;
+  width: 100%;
+  margin: 30px auto 50px;
+}
+
+.lista-certificados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.tarjeta-certificado {
+  padding: 24px;
+  border: 1px solid rgb(255 255 255 / 25%);
+  border-radius: 14px;
+  background: rgb(20 20 20 / 75%);
+  color: white;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 25%);
+}
+
+.tarjeta-certificado h2 {
+  margin: 18px 0 12px;
+  font-size: 21px;
+}
+
+.fecha-certificado {
+  margin: 0;
+  color: #d9d9d9;
+  line-height: 1.5;
+}
+
+.estado-certificado {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #315f43;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.estado-en-curso {
+  background: #315b78;
+}
