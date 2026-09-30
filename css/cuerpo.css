@@ -79,7 +79,8 @@ hr {
 
 /* Cambia estas rutas por las de tus imágenes */
 .imagen-barra-superior {
- display: flex;
+ z-index: 10;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
@@ -211,12 +212,14 @@ hr {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
 }
 
 /* Se muestra cuando el menú está abierto */
 .menu-lateral.abierto ~ .fondo-difuminado {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .contenido {
@@ -311,6 +314,7 @@ hr {
   transform: translate(-50%, -50%);
   display: block;
   line-height: 0;
+  cursor: pointer;
 }
 
 .logo-inicio img {
@@ -521,4 +525,30 @@ hr {
 
 .estado-en-curso {
   background: #315b78;
+}
+
+.tarjeta-certificado {
+  animation: deslizar-derecha 700ms ease-out both;
+}
+
+.tarjeta-certificado:nth-child(2) {
+  animation-delay: 180ms;
+}
+
+@keyframes deslizar-derecha {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tarjeta-certificado {
+    animation: none;
+  }
 }
