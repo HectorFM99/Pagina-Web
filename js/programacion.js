@@ -41,7 +41,7 @@ if (elemento) {
     if (posicion < texto.length) {
       elemento.textContent += texto.charAt(posicion);
       posicion++;
-      setTimeout(escribir, 40); // Más milisegundos = más lento
+      setTimeout(escribir, 10); // Más milisegundos = más lento
     }
   }
 
