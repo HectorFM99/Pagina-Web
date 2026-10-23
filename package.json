@@ -1,0 +1,26 @@
+{
+  "name": "pagina-web",
+  "version": "1.0.0",
+  "description": "Mi pagina web personal",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HectorFM99/Pagina-Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/HectorFM99/Pagina-Web/issues"
+  },
+  "homepage": "https://github.com/HectorFM99/Pagina-Web#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
