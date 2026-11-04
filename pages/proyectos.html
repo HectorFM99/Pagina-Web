@@ -4,58 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/cuerpo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <title>Proyectos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Proyectos | Hector Franco Magallo</title>
 </head>
 <body>
-    <nav class="imagen-barra-superior">
-  <button class="boton-hamburguesa" type="button" aria-label="Abrir menú">
-    ☰
-  </button>
-   <a class="logo-inicio" href="../index.html" aria-label="Ir a la página principal">
-  <img src="../assets/images/imagen-para-enlace.png" alt="Logo de la página">
-</a>
-</nav>
+<header>
+  <nav class="imagen-barra-superior" aria-label="Navegación principal">
+    <button class="boton-hamburguesa" type="button" aria-label="Abrir menú de navegación">
+      ☰ MENU
+    </button>
+    <a class="logo-inicio" href="../index.html" aria-label="Ir a la página principal">
+      <img src="../assets/images/imagen-para-enlace.png" alt="Logo corporativo">
+    </a>
+  </nav>
+</header>
 
-<aside class="menu-lateral">
+<aside class="menu-lateral" aria-label="Menú lateral">
   <ul>
     <li><a class="boton-menu" href="../index.html">Inicio</a></li>
-
     <li>
       <a class="boton-menu" href="sobre_mi.html">Sobre mí</a>
       <ul>
         <li><a class="boton-menu" href="certificados.html">Certificados</a></li>
-        <li><a class="boton-menu" href="estudios.html">Estudios Academicos</a></li>
+        <li><a class="boton-menu" href="estudios.html">Estudios Académicos</a></li>
       </ul>
     </li>
-
     <li>
       <a class="boton-menu" href="#">Proyectos</a>
       <ul>
-        <li><a href="proyectos.html">Todos los proyectos</a></li>
+        <li><a class="boton-menu" href="proyectos.html">Todos los proyectos</a></li>
       </ul>
     </li>
-
     <li><a class="boton-menu" href="contactos.html">Contacto</a></li>
   </ul>
 </aside>
-<div class="fondo-difuminado"></div>
-<main class=" contenido contenido-proyectos">
+
+<div class="fondo-difuminado" aria-hidden="true"></div>
+
+<main class="contenido contenido-proyectos">
+    <div class="cyber-badge-container centrado">
+      <span class="cyber-badge">[PORTFOLIO_REPO // ACTIVE_BUILDS]</span>
+    </div>
     <h1 class="centrado reveal titulo">Proyectos</h1>
-    <hr>
-    <p class="centrado">Lista de mis proyectos:</p>
+    <hr class="reveal">
+    <p class="centrado reveal">Lista de mis proyectos profesionales y en desarrollo:</p>
 </main>
-    <section class="proyectos">
-    <article class="tarjeta">
+
+<section class="proyectos" aria-label="Listado de proyectos">
+  <article class="tarjeta reveal">
     <div class="imagen-proyecto imagen-1" role="img" aria-label="Vista previa del Proyecto 1"></div>
     <div class="contenido-tarjeta">
       <h2>Pagina Web</h2>
-      <p>Pagina web programada en HTML, CSS y JavaScript</p>
+      <p>Pagina web programada en HTML, CSS y JavaScript con diseño avanzado.</p>
       <a href="https://github.com/HectorFM99/Pagina-Web" class="enlace-proyecto">Ver proyecto</a>
     </div>
   </article>
 
-  <article class="tarjeta">
+  <article class="tarjeta reveal">
     <div class="imagen-proyecto imagen-2" role="img" aria-label="Vista previa del Proyecto 2"></div>
     <div class="contenido-tarjeta">
       <h2>Coming Soon...</h2>
@@ -64,7 +69,7 @@
     </div>
   </article>
 
-  <article class="tarjeta">
+  <article class="tarjeta reveal">
     <div class="imagen-proyecto imagen-3" role="img" aria-label="Vista previa del Proyecto 3"></div>
     <div class="contenido-tarjeta">
       <h2>Coming Soon...</h2>
@@ -73,15 +78,16 @@
     </div>
   </article>
 </section>
+
 <footer class="pie-pagina">
   <nav aria-label="Enlaces legales">
     <a href="#">Aviso legal</a>
     <a href="#">Política de privacidad</a>
     <a href="#">Política de cookies</a>
   </nav>
-
-  <p>© 2026 Hector Franco Magallo</p>
+  <p>© 2026 Hector Franco Magallo — Todos los derechos reservados.</p>
 </footer>
+
 <script src="../js/programacion.js"></script>
 </body>
 </html>

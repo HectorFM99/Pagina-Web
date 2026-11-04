@@ -55,3 +55,15 @@ if (elemento) {
 
   escribir();
 }
+
+// Efecto Cyberpunk interactivo: feedback visual al hacer clic en enlaces o botones
+document.querySelectorAll("a, button, .tarjeta, .contacto-social, .tarjeta-estudio, .tarjeta-certificado").forEach((el) => {
+  el.addEventListener("mousedown", () => {
+    if (el instanceof HTMLElement) {
+      el.style.filter = "brightness(1.4) hue-rotate(15deg)";
+      setTimeout(() => {
+        el.style.filter = "";
+      }, 150);
+    }
+  });
+});

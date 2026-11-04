@@ -3,69 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Personal</title>
+    <title>Hector Franco Magallo | Full Stack Developer</title>
 
     <link rel="stylesheet" href="css/cuerpo.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
-<nav class="imagen-barra-superior">
-  <button class="boton-hamburguesa" type="button" aria-label="Abrir menú">
-    ☰
-  </button>
- <a class="logo-inicio" href="index.html" aria-label="Ir a la página principal">
-  <img src="assets/images/imagen-para-enlace.png" alt="Logo de la página">
-</a>
-</nav>
+<body class="cyber-body">
 
-<aside class="menu-lateral">
+<header>
+  <nav class="imagen-barra-superior" aria-label="Navegación principal">
+    <button class="boton-hamburguesa" type="button" aria-label="Abrir menú de navegación">
+      ☰ MENU
+    </button>
+    <a class="logo-inicio" href="index.html" aria-label="Ir a la página principal">
+      <img src="assets/images/imagen-para-enlace.png" alt="Logo corporativo">
+    </a>
+  </nav>
+</header>
+
+<aside class="menu-lateral" aria-label="Menú lateral">
   <ul>
     <li><a class="boton-menu" href="index.html">Inicio</a></li>
-
     <li>
       <a class="boton-menu" href="pages/sobre_mi.html">Sobre mí</a>
       <ul>
         <li><a class="boton-menu" href="pages/certificados.html">Certificados</a></li>
-        <li><a class="boton-menu" href="pages/estudios.html">Estudios Academicos</a></li>
+        <li><a class="boton-menu" href="pages/estudios.html">Estudios Académicos</a></li>
       </ul>
     </li>
-
     <li>
       <a class="boton-menu" href="#">Proyectos</a>
       <ul>
         <li><a class="boton-menu" href="pages/proyectos.html">Todos los proyectos</a></li>
       </ul>
     </li>
-
     <li><a class="boton-menu" href="pages/contactos.html">Contacto</a></li>
   </ul>
 </aside>
-<div class="fondo-difuminado"></div>
+
+<div class="fondo-difuminado" aria-hidden="true"></div>
+
 <main class="contenido">
-  <h1 class="centrado reveal titulo">Bienvenidos a mi página personal</h1>
+  <div class="cyber-badge-container centrado">
+    <span class="cyber-badge">[SYS_STATUS: ONLINE // PORTFOLIO_V2.6]</span>
+  </div>
+  <h1 class="centrado reveal titulo">Bienvenidos a mi perfil profesional</h1>
   <hr class="reveal">
   <p class="centrado reveal">
-    Hola, mi nombre es Hector Franco Magallo y esta es mi página personal.
+    Hola, mi nombre es <strong>Hector Franco Magallo</strong> y este es mi espacio digital de desarrollo y proyectos tecnológicos.
   </p>
   <p class="centrado reveal">
-    En esta página podrás encontrar información sobre mí, mis intereses y mis proyectos.
+    Aquí encontrarás información detallada sobre mi trayectoria, formación académica y proyectos desarrollados.
   </p>
 </main>
-</div>
+
 <footer class="pie-pagina">
   <nav aria-label="Enlaces legales">
     <a href="#">Aviso legal</a>
     <a href="#">Política de privacidad</a>
     <a href="#">Política de cookies</a>
   </nav>
-
-  <p>© 2026 Hector Franco Magallo</p>
+  <p>© 2026 Hector Franco Magallo — Todos los derechos reservados.</p>
 </footer>
+
 <script src="js/programacion.js"></script>
 </body>
 </html>
