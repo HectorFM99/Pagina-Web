@@ -101,6 +101,7 @@ body::after {
   min-height: 70px;
   padding: 12px 40px;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .imagen-barra-superior::before {
@@ -140,11 +141,12 @@ body::after {
 /* Enlaces de navegación por apartados */
 .nav-apartados {
   display: flex;
-  gap: 26px;
+  gap: 16px;
   list-style: none;
   margin: 0;
   padding: 0;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-link {
@@ -155,64 +157,27 @@ body::after {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  padding: 8px 14px;
-  border: 1px solid transparent;
+  padding: 10px 16px;
+  border: 1px solid var(--cyber-border);
   border-radius: 0;
+  background: rgba(13, 15, 26, 0.6);
   transition: all var(--transition-fast);
   position: relative;
+  white-space: nowrap;
 }
 
-.nav-link:hover,
-.nav-link.activo {
+.nav-link:hover {
   color: var(--cyber-cyan);
   border-color: var(--cyber-cyan);
-  background: rgba(0, 240, 255, 0.06);
+  background: rgba(0, 240, 255, 0.15);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
 }
 
 .nav-link.activo {
   color: var(--cyber-yellow);
   border-color: var(--cyber-yellow);
-  background: rgba(252, 238, 10, 0.08);
-}
-
-/* ---------- Menú hamburguesa ---------- */
-.boton-hamburguesa {
-  font-family: "Orbitron", sans-serif;
-  background: rgba(0, 240, 255, 0.08);
-  color: var(--cyber-cyan);
-  border: 1px solid var(--cyber-cyan);
-  padding: 10px 16px;
-  font-size: 18px;
-  cursor: pointer;
-  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
-  transition: all 0.2s ease;
-  z-index: 101;
-  position: relative;
-}
-
-.boton-hamburguesa:hover {
-  background: var(--cyber-cyan);
-  color: #0a0b10;
-  box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
-}
-
-.btn-cerrar-menu {
-  font-family: "Orbitron", sans-serif;
-  background: rgba(252, 238, 10, 0.08);
-  color: var(--cyber-yellow);
-  border: 1px solid var(--cyber-yellow);
-  padding: 10px 16px;
-  font-size: 14px;
-  cursor: pointer;
-  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
-  transition: all 0.2s ease;
-  margin-bottom: 24px;
-}
-
-.btn-cerrar-menu:hover {
-  background: var(--cyber-yellow);
-  color: #0a0b10;
-  box-shadow: 0 0 15px rgba(252, 238, 10, 0.5);
+  background: rgba(252, 238, 10, 0.15);
+  box-shadow: 0 0 15px rgba(252, 238, 10, 0.2);
 }
 
 /* ---------- Menú lateral móvil ---------- */
@@ -603,6 +568,44 @@ hr {
 .estado-activo {
   color: var(--cyber-cyan);
   text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+/* Panel de tecnologías */
+.panel-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+  color: var(--cyber-yellow);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 16px;
+  border-bottom: 1px solid var(--cyber-border);
+  padding-bottom: 8px;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-chip {
+  display: inline-block;
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid var(--cyber-border);
+  color: var(--cyber-cyan);
+  font-family: "Fira Code", "Orbitron", monospace;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all var(--transition-fast);
+}
+
+.tech-chip:hover {
+  border-color: var(--cyber-yellow);
+  color: var(--cyber-yellow);
+  box-shadow: 0 0 12px rgba(252, 238, 10, 0.25);
 }
 
 /* ---------- Proyectos ---------- */

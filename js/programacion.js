@@ -1,62 +1,9 @@
 "use strict";
 
 // ==================== DOM ====================
-const botonMenu = document.querySelector(".boton-hamburguesa");
-const btnCerrarMenu = document.querySelector(".btn-cerrar-menu");
-const menuLateral = document.querySelector("#menuLateral");
-const fondoDifuminado = document.querySelector("#fondoDifuminado");
 const navLinks = document.querySelectorAll(".nav-link");
 const header = document.querySelector("#header");
 const scrollProgress = document.querySelector(".scroll-progress");
-
-// ==================== Menú lateral ====================
-function abrirMenu() {
-  if (menuLateral) menuLateral.classList.add("abierto");
-  if (fondoDifuminado) fondoDifuminado.classList.add("visible");
-  document.body.style.overflow = "hidden";
-}
-
-function cerrarMenu() {
-  if (menuLateral) menuLateral.classList.remove("abierto");
-  if (fondoDifuminado) fondoDifuminado.classList.remove("visible");
-  document.body.style.overflow = "";
-}
-
-if (botonMenu) {
-  botonMenu.addEventListener("click", (e) => {
-    e.stopPropagation();
-    abrirMenu();
-  });
-}
-
-if (btnCerrarMenu) {
-  btnCerrarMenu.addEventListener("click", (e) => {
-    e.stopPropagation();
-    cerrarMenu();
-  });
-}
-
-if (fondoDifuminado) {
-  fondoDifuminado.addEventListener("click", cerrarMenu);
-}
-
-// Cerrar menú al hacer clic en un enlace del menú lateral
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    cerrarMenu();
-  });
-});
-
-// Clic fuera del menú (en desktop no aplica mucho, pero lo dejamos)
-document.addEventListener("click", (evento) => {
-  const destino = evento.target;
-  if (!menuLateral || !botonMenu) return;
-  const clicEnMenu = destino instanceof Node && menuLateral.contains(destino);
-  const clicEnBoton = destino instanceof Node && botonMenu.contains(destino);
-  if (!clicEnMenu && !clicEnBoton && menuLateral.classList.contains("abierto")) {
-    cerrarMenu();
-  }
-});
 
 // ==================== Navegación por apartados (scroll suave) ====================
 navLinks.forEach((link) => {
@@ -147,7 +94,6 @@ if (elemento) {
       setTimeout(escribir, 12);
     }
   };
-  // Pequeña pausa para que se vea la carga
   setTimeout(escribir, 400);
 }
 
