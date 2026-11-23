@@ -3,3 +3,6 @@ node_modules/
 
 # Errores de TypeScript
 *.tsbuildinfo
+
+# Carpeta de skill local (no subir al repo)
+ui-ux-pro-max-skill/
